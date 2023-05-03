@@ -1,0 +1,4354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("597e8ffe-033c-4873-b70a-07272b7ce504",{name:"lakshmana"});
+    posthog.capture("report_feature",{karate_version:"1.3.0.RC2",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>testrunner.PUT</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">6</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-01-07 11:40:37 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:4]"><span>[1:4]</span> <span>PUT API</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:18]"><span>[2:18]</span> <span>PUT_WITH_BACKGROUND</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:34]"><span>[3:34]</span> <span>RESPONSE ASSERTION</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:50]"><span>[4:50]</span> <span>RESPONSE FROM FILE</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5:67]"><span>[5:67]</span> <span>REQUEST FROM FILE</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[6:83]"><span>[6:83]</span> <span>PUT SPECIFIC DATA</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">testrunner/PUT.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">PUT API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:4]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:4]</span>
+                <span class="scenario-name">PUT API</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>673</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://reqres.in/api/register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;password&quot;:&quot;pistol&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">672</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">11:40:33.654 request:
+1 &gt; PUT https://reqres.in/api/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 50
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;password&quot;:&quot;pistol&quot;}
+
+11:40:34.321 response time in milliseconds: 666
+1 &lt; 404
+1 &lt; Date: Sat, 07 Jan 2023 06:10:34 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=HhKIA0J5aZ9XvWm4cs8EL9fZVTNoa9xbejrzSU2e%2FKCLigiqIxyMCehHZIWX5KuYrqlqjWU9lZzx9vtsydJIVoMLN36ucWmDHDlt%2F3Jl2jp%2F2qkzUREtyTuC3g%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 785a87f188c4f367-BOM
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;!-- Google Tag Manager --&gt;
+        &lt;script&gt;
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    &#39;gtm.start&#39;: new Date().getTime(),
+                    event: &#39;gtm.js&#39;,
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != &#39;dataLayer&#39; ? &#39;&amp;l=&#39; + l : &#39;&#39;
+                j.async = true
+                j.src = &#39;https://www.googletagmanager.com/gtm.js?id=&#39; + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, &#39;script&#39;, &#39;dataLayer&#39;, &#39;GTM-KB622KF&#39;)
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+        &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta
+            name=&quot;viewport&quot;
+            content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0&quot;
+        /&gt;
+        &lt;meta
+            name=&quot;description&quot;
+            content=&quot;A hosted REST-API ready to respond to your AJAX requests&quot;
+        /&gt;
+        &lt;title&gt;
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        &lt;/title&gt;
+        &lt;link
+            href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;
+            rel=&quot;stylesheet&quot;
+        /&gt;
+
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/app.css&quot; /&gt;
+        &lt;script
+            type=&quot;text/javascript&quot;
+            src=&quot;//m.servedby-buysellads.com/monetization.custom.js&quot;
+        &gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;header-content&quot;&gt;
+            &lt;header class=&quot;main-header&quot;&gt;
+                &lt;section class=&quot;wrap&quot;&gt;
+                    &lt;h1 class=&quot;logo&quot;&gt;
+                        &lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/img/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+                    &lt;/h1&gt;
+                &lt;/section&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;the-sell&quot;&gt;
+                &lt;div class=&quot;wrap&quot;&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        Test your front-end against a real API
+                    &lt;/h2&gt;
+                    &lt;section class=&quot;key-sells&quot;&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Fake data&lt;/h3&gt;
+                                &lt;p&gt;
+                                    No more tedious sample data creation, we&#39;ve
+                                    got it covered.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-cloud-download&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Real responses&lt;/h3&gt;
+                                &lt;p&gt;
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp;amp; DELETE supported.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-code&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Always-on&lt;/h3&gt;
+                                &lt;p&gt;
+                                    24/7 &lt;strong&gt;&lt;em&gt;free&lt;/em&gt;&lt;/strong&gt; access
+                                    in your development phases. Go nuts.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-toggle-on&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    &lt;/h2&gt;
+                    &lt;div class=&quot;t-center main-arrow&quot;&gt;
+                        &lt;i class=&quot;fa fa-arrow-circle-down&quot;&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;script
+                        async
+                        type=&quot;text/javascript&quot;
+                        src=&quot;//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin&quot;
+                        id=&quot;_carbonads_js&quot;
+                    &gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/main&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container&quot;&gt;404&lt;/div&gt;
+        &lt;footer&gt;
+            &lt;div class=&quot;wrap&quot;&gt;
+                &lt;hr class=&quot;dark&quot; /&gt;
+                &lt;p class=&quot;t-center&quot;&gt;
+                    Made for developers and designers by
+                    &lt;a href=&quot;https://benhowdle.im&quot;&gt;Ben Howdle&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/footer&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/js/app.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+        &lt;script
+            async
+            src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-174008107-1&quot;
+        &gt;&lt;/script&gt;
+        &lt;script&gt;
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag(&#39;js&#39;, new Date())
+
+            gtag(&#39;config&#39;, &#39;UA-174008107-1&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function (i, s, o, g, r, a, m) {
+                i[&#39;GoogleAnalyticsObject&#39;] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                &#39;script&#39;,
+                &#39;//www.google-analytics.com/analytics.js&#39;,
+                &#39;ga&#39;
+            )
+
+            ga(&#39;create&#39;, &#39;UA-55888877-1&#39;, &#39;auto&#39;)
+            ga(&#39;send&#39;, &#39;pageview&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function () {
+                if (typeof _bsa !== &#39;undefined&#39; &amp;&amp; _bsa) {
+                    _bsa.init(
+                        &#39;custom&#39;,
+                        &#39;CEBIP53J&#39;,
+                        &#39;placement:reqresin-sponsor&#39;,
+                        {
+                            target: &#39;#impeccable-js&#39;,
+                            template: `
+        &lt;a href=&quot;##link##&quot; rel=&quot;sponsored noopener&quot; target=&quot;_blank&quot; title=&quot;##company## — ##tagline##&quot;&gt;
+        &lt;img src=&quot;##logo##&quot; style=&quot;background-color: ##backgroundColor##&quot;&gt;
+        &lt;div class=&quot;sponsor-description&quot;&gt;##description##&lt;/div&gt;
+        &lt;div class=&quot;sponsor-cta&quot; style=&quot;background-color: ##backgroundColor##; color: ##textColor##&quot;&gt;##callToAction##&lt;/div&gt;
+        &lt;/a&gt;
+        `,
+                        }
+                    )
+                }
+            })()
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">11:40:34.324 classpath:testrunner/PUT.feature:9
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 666, url: https://reqres.in/api/register, response: 
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;!-- Google Tag Manager --&gt;
+        &lt;script&gt;
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    &#39;gtm.start&#39;: new Date().getTime(),
+                    event: &#39;gtm.js&#39;,
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != &#39;dataLayer&#39; ? &#39;&amp;l=&#39; + l : &#39;&#39;
+                j.async = true
+                j.src = &#39;https://www.googletagmanager.com/gtm.js?id=&#39; + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, &#39;script&#39;, &#39;dataLayer&#39;, &#39;GTM-KB622KF&#39;)
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+        &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta
+            name=&quot;viewport&quot;
+            content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0&quot;
+        /&gt;
+        &lt;meta
+            name=&quot;description&quot;
+            content=&quot;A hosted REST-API ready to respond to your AJAX requests&quot;
+        /&gt;
+        &lt;title&gt;
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        &lt;/title&gt;
+        &lt;link
+            href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;
+            rel=&quot;stylesheet&quot;
+        /&gt;
+
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/app.css&quot; /&gt;
+        &lt;script
+            type=&quot;text/javascript&quot;
+            src=&quot;//m.servedby-buysellads.com/monetization.custom.js&quot;
+        &gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;header-content&quot;&gt;
+            &lt;header class=&quot;main-header&quot;&gt;
+                &lt;section class=&quot;wrap&quot;&gt;
+                    &lt;h1 class=&quot;logo&quot;&gt;
+                        &lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/img/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+                    &lt;/h1&gt;
+                &lt;/section&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;the-sell&quot;&gt;
+                &lt;div class=&quot;wrap&quot;&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        Test your front-end against a real API
+                    &lt;/h2&gt;
+                    &lt;section class=&quot;key-sells&quot;&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Fake data&lt;/h3&gt;
+                                &lt;p&gt;
+                                    No more tedious sample data creation, we&#39;ve
+                                    got it covered.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-cloud-download&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Real responses&lt;/h3&gt;
+                                &lt;p&gt;
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp;amp; DELETE supported.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-code&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Always-on&lt;/h3&gt;
+                                &lt;p&gt;
+                                    24/7 &lt;strong&gt;&lt;em&gt;free&lt;/em&gt;&lt;/strong&gt; access
+                                    in your development phases. Go nuts.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-toggle-on&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    &lt;/h2&gt;
+                    &lt;div class=&quot;t-center main-arrow&quot;&gt;
+                        &lt;i class=&quot;fa fa-arrow-circle-down&quot;&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;script
+                        async
+                        type=&quot;text/javascript&quot;
+                        src=&quot;//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin&quot;
+                        id=&quot;_carbonads_js&quot;
+                    &gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/main&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container&quot;&gt;404&lt;/div&gt;
+        &lt;footer&gt;
+            &lt;div class=&quot;wrap&quot;&gt;
+                &lt;hr class=&quot;dark&quot; /&gt;
+                &lt;p class=&quot;t-center&quot;&gt;
+                    Made for developers and designers by
+                    &lt;a href=&quot;https://benhowdle.im&quot;&gt;Ben Howdle&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/footer&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/js/app.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+        &lt;script
+            async
+            src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-174008107-1&quot;
+        &gt;&lt;/script&gt;
+        &lt;script&gt;
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag(&#39;js&#39;, new Date())
+
+            gtag(&#39;config&#39;, &#39;UA-174008107-1&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function (i, s, o, g, r, a, m) {
+                i[&#39;GoogleAnalyticsObject&#39;] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                &#39;script&#39;,
+                &#39;//www.google-analytics.com/analytics.js&#39;,
+                &#39;ga&#39;
+            )
+
+            ga(&#39;create&#39;, &#39;UA-55888877-1&#39;, &#39;auto&#39;)
+            ga(&#39;send&#39;, &#39;pageview&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function () {
+                if (typeof _bsa !== &#39;undefined&#39; &amp;&amp; _bsa) {
+                    _bsa.init(
+                        &#39;custom&#39;,
+                        &#39;CEBIP53J&#39;,
+                        &#39;placement:reqresin-sponsor&#39;,
+                        {
+                            target: &#39;#impeccable-js&#39;,
+                            template: `
+        &lt;a href=&quot;##link##&quot; rel=&quot;sponsored noopener&quot; target=&quot;_blank&quot; title=&quot;##company## — ##tagline##&quot;&gt;
+        &lt;img src=&quot;##logo##&quot; style=&quot;background-color: ##backgroundColor##&quot;&gt;
+        &lt;div class=&quot;sponsor-description&quot;&gt;##description##&lt;/div&gt;
+        &lt;div class=&quot;sponsor-cta&quot; style=&quot;background-color: ##backgroundColor##; color: ##textColor##&quot;&gt;##callToAction##&lt;/div&gt;
+        &lt;/a&gt;
+        `,
+                        }
+                    )
+                }
+            })()
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+classpath:testrunner/PUT.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref skipped">10</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref skipped">11</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref skipped">12</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseTime</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref skipped">13</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref skipped">14</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseCookies</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:18]</span>
+                <span class="scenario-name">PUT_WITH_BACKGROUND</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>705</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://reqres.in&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;password&quot;:&quot;pistol&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">704</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">11:40:34.336 request:
+1 &gt; PUT https://reqres.in/api/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 50
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;password&quot;:&quot;pistol&quot;}
+
+11:40:35.037 response time in milliseconds: 700
+1 &lt; 404
+1 &lt; Date: Sat, 07 Jan 2023 06:10:35 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=ViZxxp8bQCv7LRHCxfZm23R381Bo0gyOnC2Y3yGi5YlWbTlOF5hQdqyDsbY9jJyl2A9mmQXGddVKWXpDVMi2Jy%2FvOfvuMg3U1%2BMq%2FoAmiiW8ukbqSVGAmjYmrQ%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 785a87f5cbdaf3c5-BOM
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;!-- Google Tag Manager --&gt;
+        &lt;script&gt;
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    &#39;gtm.start&#39;: new Date().getTime(),
+                    event: &#39;gtm.js&#39;,
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != &#39;dataLayer&#39; ? &#39;&amp;l=&#39; + l : &#39;&#39;
+                j.async = true
+                j.src = &#39;https://www.googletagmanager.com/gtm.js?id=&#39; + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, &#39;script&#39;, &#39;dataLayer&#39;, &#39;GTM-KB622KF&#39;)
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+        &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta
+            name=&quot;viewport&quot;
+            content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0&quot;
+        /&gt;
+        &lt;meta
+            name=&quot;description&quot;
+            content=&quot;A hosted REST-API ready to respond to your AJAX requests&quot;
+        /&gt;
+        &lt;title&gt;
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        &lt;/title&gt;
+        &lt;link
+            href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;
+            rel=&quot;stylesheet&quot;
+        /&gt;
+
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/app.css&quot; /&gt;
+        &lt;script
+            type=&quot;text/javascript&quot;
+            src=&quot;//m.servedby-buysellads.com/monetization.custom.js&quot;
+        &gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;header-content&quot;&gt;
+            &lt;header class=&quot;main-header&quot;&gt;
+                &lt;section class=&quot;wrap&quot;&gt;
+                    &lt;h1 class=&quot;logo&quot;&gt;
+                        &lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/img/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+                    &lt;/h1&gt;
+                &lt;/section&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;the-sell&quot;&gt;
+                &lt;div class=&quot;wrap&quot;&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        Test your front-end against a real API
+                    &lt;/h2&gt;
+                    &lt;section class=&quot;key-sells&quot;&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Fake data&lt;/h3&gt;
+                                &lt;p&gt;
+                                    No more tedious sample data creation, we&#39;ve
+                                    got it covered.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-cloud-download&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Real responses&lt;/h3&gt;
+                                &lt;p&gt;
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp;amp; DELETE supported.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-code&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Always-on&lt;/h3&gt;
+                                &lt;p&gt;
+                                    24/7 &lt;strong&gt;&lt;em&gt;free&lt;/em&gt;&lt;/strong&gt; access
+                                    in your development phases. Go nuts.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-toggle-on&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    &lt;/h2&gt;
+                    &lt;div class=&quot;t-center main-arrow&quot;&gt;
+                        &lt;i class=&quot;fa fa-arrow-circle-down&quot;&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;script
+                        async
+                        type=&quot;text/javascript&quot;
+                        src=&quot;//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin&quot;
+                        id=&quot;_carbonads_js&quot;
+                    &gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/main&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container&quot;&gt;404&lt;/div&gt;
+        &lt;footer&gt;
+            &lt;div class=&quot;wrap&quot;&gt;
+                &lt;hr class=&quot;dark&quot; /&gt;
+                &lt;p class=&quot;t-center&quot;&gt;
+                    Made for developers and designers by
+                    &lt;a href=&quot;https://benhowdle.im&quot;&gt;Ben Howdle&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/footer&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/js/app.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+        &lt;script
+            async
+            src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-174008107-1&quot;
+        &gt;&lt;/script&gt;
+        &lt;script&gt;
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag(&#39;js&#39;, new Date())
+
+            gtag(&#39;config&#39;, &#39;UA-174008107-1&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function (i, s, o, g, r, a, m) {
+                i[&#39;GoogleAnalyticsObject&#39;] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                &#39;script&#39;,
+                &#39;//www.google-analytics.com/analytics.js&#39;,
+                &#39;ga&#39;
+            )
+
+            ga(&#39;create&#39;, &#39;UA-55888877-1&#39;, &#39;auto&#39;)
+            ga(&#39;send&#39;, &#39;pageview&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function () {
+                if (typeof _bsa !== &#39;undefined&#39; &amp;&amp; _bsa) {
+                    _bsa.init(
+                        &#39;custom&#39;,
+                        &#39;CEBIP53J&#39;,
+                        &#39;placement:reqresin-sponsor&#39;,
+                        {
+                            target: &#39;#impeccable-js&#39;,
+                            template: `
+        &lt;a href=&quot;##link##&quot; rel=&quot;sponsored noopener&quot; target=&quot;_blank&quot; title=&quot;##company## — ##tagline##&quot;&gt;
+        &lt;img src=&quot;##logo##&quot; style=&quot;background-color: ##backgroundColor##&quot;&gt;
+        &lt;div class=&quot;sponsor-description&quot;&gt;##description##&lt;/div&gt;
+        &lt;div class=&quot;sponsor-cta&quot; style=&quot;background-color: ##backgroundColor##; color: ##textColor##&quot;&gt;##callToAction##&lt;/div&gt;
+        &lt;/a&gt;
+        `,
+                        }
+                    )
+                }
+            })()
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref failed">24</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">11:40:35.038 classpath:testrunner/PUT.feature:24
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 700, url: https://reqres.in/api/register, response: 
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;!-- Google Tag Manager --&gt;
+        &lt;script&gt;
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    &#39;gtm.start&#39;: new Date().getTime(),
+                    event: &#39;gtm.js&#39;,
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != &#39;dataLayer&#39; ? &#39;&amp;l=&#39; + l : &#39;&#39;
+                j.async = true
+                j.src = &#39;https://www.googletagmanager.com/gtm.js?id=&#39; + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, &#39;script&#39;, &#39;dataLayer&#39;, &#39;GTM-KB622KF&#39;)
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+        &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta
+            name=&quot;viewport&quot;
+            content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0&quot;
+        /&gt;
+        &lt;meta
+            name=&quot;description&quot;
+            content=&quot;A hosted REST-API ready to respond to your AJAX requests&quot;
+        /&gt;
+        &lt;title&gt;
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        &lt;/title&gt;
+        &lt;link
+            href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;
+            rel=&quot;stylesheet&quot;
+        /&gt;
+
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/app.css&quot; /&gt;
+        &lt;script
+            type=&quot;text/javascript&quot;
+            src=&quot;//m.servedby-buysellads.com/monetization.custom.js&quot;
+        &gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;header-content&quot;&gt;
+            &lt;header class=&quot;main-header&quot;&gt;
+                &lt;section class=&quot;wrap&quot;&gt;
+                    &lt;h1 class=&quot;logo&quot;&gt;
+                        &lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/img/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+                    &lt;/h1&gt;
+                &lt;/section&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;the-sell&quot;&gt;
+                &lt;div class=&quot;wrap&quot;&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        Test your front-end against a real API
+                    &lt;/h2&gt;
+                    &lt;section class=&quot;key-sells&quot;&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Fake data&lt;/h3&gt;
+                                &lt;p&gt;
+                                    No more tedious sample data creation, we&#39;ve
+                                    got it covered.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-cloud-download&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Real responses&lt;/h3&gt;
+                                &lt;p&gt;
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp;amp; DELETE supported.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-code&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Always-on&lt;/h3&gt;
+                                &lt;p&gt;
+                                    24/7 &lt;strong&gt;&lt;em&gt;free&lt;/em&gt;&lt;/strong&gt; access
+                                    in your development phases. Go nuts.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-toggle-on&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    &lt;/h2&gt;
+                    &lt;div class=&quot;t-center main-arrow&quot;&gt;
+                        &lt;i class=&quot;fa fa-arrow-circle-down&quot;&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;script
+                        async
+                        type=&quot;text/javascript&quot;
+                        src=&quot;//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin&quot;
+                        id=&quot;_carbonads_js&quot;
+                    &gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/main&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container&quot;&gt;404&lt;/div&gt;
+        &lt;footer&gt;
+            &lt;div class=&quot;wrap&quot;&gt;
+                &lt;hr class=&quot;dark&quot; /&gt;
+                &lt;p class=&quot;t-center&quot;&gt;
+                    Made for developers and designers by
+                    &lt;a href=&quot;https://benhowdle.im&quot;&gt;Ben Howdle&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/footer&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/js/app.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+        &lt;script
+            async
+            src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-174008107-1&quot;
+        &gt;&lt;/script&gt;
+        &lt;script&gt;
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag(&#39;js&#39;, new Date())
+
+            gtag(&#39;config&#39;, &#39;UA-174008107-1&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function (i, s, o, g, r, a, m) {
+                i[&#39;GoogleAnalyticsObject&#39;] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                &#39;script&#39;,
+                &#39;//www.google-analytics.com/analytics.js&#39;,
+                &#39;ga&#39;
+            )
+
+            ga(&#39;create&#39;, &#39;UA-55888877-1&#39;, &#39;auto&#39;)
+            ga(&#39;send&#39;, &#39;pageview&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function () {
+                if (typeof _bsa !== &#39;undefined&#39; &amp;&amp; _bsa) {
+                    _bsa.init(
+                        &#39;custom&#39;,
+                        &#39;CEBIP53J&#39;,
+                        &#39;placement:reqresin-sponsor&#39;,
+                        {
+                            target: &#39;#impeccable-js&#39;,
+                            template: `
+        &lt;a href=&quot;##link##&quot; rel=&quot;sponsored noopener&quot; target=&quot;_blank&quot; title=&quot;##company## — ##tagline##&quot;&gt;
+        &lt;img src=&quot;##logo##&quot; style=&quot;background-color: ##backgroundColor##&quot;&gt;
+        &lt;div class=&quot;sponsor-description&quot;&gt;##description##&lt;/div&gt;
+        &lt;div class=&quot;sponsor-cta&quot; style=&quot;background-color: ##backgroundColor##; color: ##textColor##&quot;&gt;##callToAction##&lt;/div&gt;
+        &lt;/a&gt;
+        `,
+                        }
+                    )
+                }
+            })()
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+classpath:testrunner/PUT.feature:24
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref skipped">25</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref skipped">26</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref skipped">27</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseTime</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref skipped">28</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref skipped">29</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseCookies</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:34]</span>
+                <span class="scenario-name">RESPONSE ASSERTION</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>791</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://reqres.in&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;password&quot;:&quot;pistol&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">790</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.39">11:40:35.058 request:
+1 &gt; PUT https://reqres.in/api/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 50
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;password&quot;:&quot;pistol&quot;}
+
+11:40:35.845 response time in milliseconds: 787
+1 &lt; 404
+1 &lt; Date: Sat, 07 Jan 2023 06:10:35 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=XciopYdp0u2SXb0%2F%2FMLBbs6HyPtwsr7OdiNBjwgCnydr8MuothAefNy2aqAnhFOGpZthfmAS1kKUxXYy8no3xWRLstB3oF5hbdapUfHSc%2B10S2SCfCfaruH6Gw%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 785a87fa5d6e6ec5-BOM
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;!-- Google Tag Manager --&gt;
+        &lt;script&gt;
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    &#39;gtm.start&#39;: new Date().getTime(),
+                    event: &#39;gtm.js&#39;,
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != &#39;dataLayer&#39; ? &#39;&amp;l=&#39; + l : &#39;&#39;
+                j.async = true
+                j.src = &#39;https://www.googletagmanager.com/gtm.js?id=&#39; + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, &#39;script&#39;, &#39;dataLayer&#39;, &#39;GTM-KB622KF&#39;)
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+        &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta
+            name=&quot;viewport&quot;
+            content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0&quot;
+        /&gt;
+        &lt;meta
+            name=&quot;description&quot;
+            content=&quot;A hosted REST-API ready to respond to your AJAX requests&quot;
+        /&gt;
+        &lt;title&gt;
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        &lt;/title&gt;
+        &lt;link
+            href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;
+            rel=&quot;stylesheet&quot;
+        /&gt;
+
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/app.css&quot; /&gt;
+        &lt;script
+            type=&quot;text/javascript&quot;
+            src=&quot;//m.servedby-buysellads.com/monetization.custom.js&quot;
+        &gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;header-content&quot;&gt;
+            &lt;header class=&quot;main-header&quot;&gt;
+                &lt;section class=&quot;wrap&quot;&gt;
+                    &lt;h1 class=&quot;logo&quot;&gt;
+                        &lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/img/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+                    &lt;/h1&gt;
+                &lt;/section&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;the-sell&quot;&gt;
+                &lt;div class=&quot;wrap&quot;&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        Test your front-end against a real API
+                    &lt;/h2&gt;
+                    &lt;section class=&quot;key-sells&quot;&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Fake data&lt;/h3&gt;
+                                &lt;p&gt;
+                                    No more tedious sample data creation, we&#39;ve
+                                    got it covered.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-cloud-download&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Real responses&lt;/h3&gt;
+                                &lt;p&gt;
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp;amp; DELETE supported.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-code&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Always-on&lt;/h3&gt;
+                                &lt;p&gt;
+                                    24/7 &lt;strong&gt;&lt;em&gt;free&lt;/em&gt;&lt;/strong&gt; access
+                                    in your development phases. Go nuts.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-toggle-on&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    &lt;/h2&gt;
+                    &lt;div class=&quot;t-center main-arrow&quot;&gt;
+                        &lt;i class=&quot;fa fa-arrow-circle-down&quot;&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;script
+                        async
+                        type=&quot;text/javascript&quot;
+                        src=&quot;//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin&quot;
+                        id=&quot;_carbonads_js&quot;
+                    &gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/main&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container&quot;&gt;404&lt;/div&gt;
+        &lt;footer&gt;
+            &lt;div class=&quot;wrap&quot;&gt;
+                &lt;hr class=&quot;dark&quot; /&gt;
+                &lt;p class=&quot;t-center&quot;&gt;
+                    Made for developers and designers by
+                    &lt;a href=&quot;https://benhowdle.im&quot;&gt;Ben Howdle&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/footer&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/js/app.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+        &lt;script
+            async
+            src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-174008107-1&quot;
+        &gt;&lt;/script&gt;
+        &lt;script&gt;
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag(&#39;js&#39;, new Date())
+
+            gtag(&#39;config&#39;, &#39;UA-174008107-1&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function (i, s, o, g, r, a, m) {
+                i[&#39;GoogleAnalyticsObject&#39;] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                &#39;script&#39;,
+                &#39;//www.google-analytics.com/analytics.js&#39;,
+                &#39;ga&#39;
+            )
+
+            ga(&#39;create&#39;, &#39;UA-55888877-1&#39;, &#39;auto&#39;)
+            ga(&#39;send&#39;, &#39;pageview&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function () {
+                if (typeof _bsa !== &#39;undefined&#39; &amp;&amp; _bsa) {
+                    _bsa.init(
+                        &#39;custom&#39;,
+                        &#39;CEBIP53J&#39;,
+                        &#39;placement:reqresin-sponsor&#39;,
+                        {
+                            target: &#39;#impeccable-js&#39;,
+                            template: `
+        &lt;a href=&quot;##link##&quot; rel=&quot;sponsored noopener&quot; target=&quot;_blank&quot; title=&quot;##company## — ##tagline##&quot;&gt;
+        &lt;img src=&quot;##logo##&quot; style=&quot;background-color: ##backgroundColor##&quot;&gt;
+        &lt;div class=&quot;sponsor-description&quot;&gt;##description##&lt;/div&gt;
+        &lt;div class=&quot;sponsor-cta&quot; style=&quot;background-color: ##backgroundColor##; color: ##textColor##&quot;&gt;##callToAction##&lt;/div&gt;
+        &lt;/a&gt;
+        `,
+                        }
+                    )
+                }
+            })()
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref failed">40</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.40">11:40:35.846 classpath:testrunner/PUT.feature:40
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 787, url: https://reqres.in/api/register, response: 
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;!-- Google Tag Manager --&gt;
+        &lt;script&gt;
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    &#39;gtm.start&#39;: new Date().getTime(),
+                    event: &#39;gtm.js&#39;,
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != &#39;dataLayer&#39; ? &#39;&amp;l=&#39; + l : &#39;&#39;
+                j.async = true
+                j.src = &#39;https://www.googletagmanager.com/gtm.js?id=&#39; + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, &#39;script&#39;, &#39;dataLayer&#39;, &#39;GTM-KB622KF&#39;)
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+        &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta
+            name=&quot;viewport&quot;
+            content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0&quot;
+        /&gt;
+        &lt;meta
+            name=&quot;description&quot;
+            content=&quot;A hosted REST-API ready to respond to your AJAX requests&quot;
+        /&gt;
+        &lt;title&gt;
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        &lt;/title&gt;
+        &lt;link
+            href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;
+            rel=&quot;stylesheet&quot;
+        /&gt;
+
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/app.css&quot; /&gt;
+        &lt;script
+            type=&quot;text/javascript&quot;
+            src=&quot;//m.servedby-buysellads.com/monetization.custom.js&quot;
+        &gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;header-content&quot;&gt;
+            &lt;header class=&quot;main-header&quot;&gt;
+                &lt;section class=&quot;wrap&quot;&gt;
+                    &lt;h1 class=&quot;logo&quot;&gt;
+                        &lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/img/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+                    &lt;/h1&gt;
+                &lt;/section&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;the-sell&quot;&gt;
+                &lt;div class=&quot;wrap&quot;&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        Test your front-end against a real API
+                    &lt;/h2&gt;
+                    &lt;section class=&quot;key-sells&quot;&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Fake data&lt;/h3&gt;
+                                &lt;p&gt;
+                                    No more tedious sample data creation, we&#39;ve
+                                    got it covered.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-cloud-download&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Real responses&lt;/h3&gt;
+                                &lt;p&gt;
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp;amp; DELETE supported.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-code&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Always-on&lt;/h3&gt;
+                                &lt;p&gt;
+                                    24/7 &lt;strong&gt;&lt;em&gt;free&lt;/em&gt;&lt;/strong&gt; access
+                                    in your development phases. Go nuts.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-toggle-on&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    &lt;/h2&gt;
+                    &lt;div class=&quot;t-center main-arrow&quot;&gt;
+                        &lt;i class=&quot;fa fa-arrow-circle-down&quot;&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;script
+                        async
+                        type=&quot;text/javascript&quot;
+                        src=&quot;//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin&quot;
+                        id=&quot;_carbonads_js&quot;
+                    &gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/main&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container&quot;&gt;404&lt;/div&gt;
+        &lt;footer&gt;
+            &lt;div class=&quot;wrap&quot;&gt;
+                &lt;hr class=&quot;dark&quot; /&gt;
+                &lt;p class=&quot;t-center&quot;&gt;
+                    Made for developers and designers by
+                    &lt;a href=&quot;https://benhowdle.im&quot;&gt;Ben Howdle&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/footer&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/js/app.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+        &lt;script
+            async
+            src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-174008107-1&quot;
+        &gt;&lt;/script&gt;
+        &lt;script&gt;
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag(&#39;js&#39;, new Date())
+
+            gtag(&#39;config&#39;, &#39;UA-174008107-1&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function (i, s, o, g, r, a, m) {
+                i[&#39;GoogleAnalyticsObject&#39;] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                &#39;script&#39;,
+                &#39;//www.google-analytics.com/analytics.js&#39;,
+                &#39;ga&#39;
+            )
+
+            ga(&#39;create&#39;, &#39;UA-55888877-1&#39;, &#39;auto&#39;)
+            ga(&#39;send&#39;, &#39;pageview&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function () {
+                if (typeof _bsa !== &#39;undefined&#39; &amp;&amp; _bsa) {
+                    _bsa.init(
+                        &#39;custom&#39;,
+                        &#39;CEBIP53J&#39;,
+                        &#39;placement:reqresin-sponsor&#39;,
+                        {
+                            target: &#39;#impeccable-js&#39;,
+                            template: `
+        &lt;a href=&quot;##link##&quot; rel=&quot;sponsored noopener&quot; target=&quot;_blank&quot; title=&quot;##company## — ##tagline##&quot;&gt;
+        &lt;img src=&quot;##logo##&quot; style=&quot;background-color: ##backgroundColor##&quot;&gt;
+        &lt;div class=&quot;sponsor-description&quot;&gt;##description##&lt;/div&gt;
+        &lt;div class=&quot;sponsor-cta&quot; style=&quot;background-color: ##backgroundColor##; color: ##textColor##&quot;&gt;##callToAction##&lt;/div&gt;
+        &lt;/a&gt;
+        `,
+                        }
+                    )
+                }
+            })()
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+classpath:testrunner/PUT.feature:40
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref skipped">41</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == {&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;password&quot;:&quot;pistol&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref skipped">42</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref skipped">43</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref skipped">44</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseTime</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref skipped">45</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref skipped">46</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseCookies</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:50]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:50]</span>
+                <span class="scenario-name">RESPONSE FROM FILE</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>651</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def expectedOutput = read(&#39;putresponse.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://reqres.in&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;password&quot;:&quot;pistol&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">647</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.57">11:40:35.858 request:
+1 &gt; PUT https://reqres.in/api/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 50
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;password&quot;:&quot;pistol&quot;}
+
+11:40:36.502 response time in milliseconds: 644
+1 &lt; 404
+1 &lt; Date: Sat, 07 Jan 2023 06:10:36 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=KaAQNnJriEUGXhLVcQw%2FkHZ00DJUASnXqdU%2BeCNlZzvD%2BTdj8uXdlmFa2wSbEVtOnGWhKlCvq%2BfKH1%2F38%2Frn0A59UXHxLoicTVNqr3NStshindRbVUBFoOy3GQ%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 785a87ff288a858f-BOM
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;!-- Google Tag Manager --&gt;
+        &lt;script&gt;
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    &#39;gtm.start&#39;: new Date().getTime(),
+                    event: &#39;gtm.js&#39;,
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != &#39;dataLayer&#39; ? &#39;&amp;l=&#39; + l : &#39;&#39;
+                j.async = true
+                j.src = &#39;https://www.googletagmanager.com/gtm.js?id=&#39; + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, &#39;script&#39;, &#39;dataLayer&#39;, &#39;GTM-KB622KF&#39;)
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+        &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta
+            name=&quot;viewport&quot;
+            content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0&quot;
+        /&gt;
+        &lt;meta
+            name=&quot;description&quot;
+            content=&quot;A hosted REST-API ready to respond to your AJAX requests&quot;
+        /&gt;
+        &lt;title&gt;
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        &lt;/title&gt;
+        &lt;link
+            href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;
+            rel=&quot;stylesheet&quot;
+        /&gt;
+
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/app.css&quot; /&gt;
+        &lt;script
+            type=&quot;text/javascript&quot;
+            src=&quot;//m.servedby-buysellads.com/monetization.custom.js&quot;
+        &gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;header-content&quot;&gt;
+            &lt;header class=&quot;main-header&quot;&gt;
+                &lt;section class=&quot;wrap&quot;&gt;
+                    &lt;h1 class=&quot;logo&quot;&gt;
+                        &lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/img/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+                    &lt;/h1&gt;
+                &lt;/section&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;the-sell&quot;&gt;
+                &lt;div class=&quot;wrap&quot;&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        Test your front-end against a real API
+                    &lt;/h2&gt;
+                    &lt;section class=&quot;key-sells&quot;&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Fake data&lt;/h3&gt;
+                                &lt;p&gt;
+                                    No more tedious sample data creation, we&#39;ve
+                                    got it covered.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-cloud-download&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Real responses&lt;/h3&gt;
+                                &lt;p&gt;
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp;amp; DELETE supported.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-code&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Always-on&lt;/h3&gt;
+                                &lt;p&gt;
+                                    24/7 &lt;strong&gt;&lt;em&gt;free&lt;/em&gt;&lt;/strong&gt; access
+                                    in your development phases. Go nuts.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-toggle-on&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    &lt;/h2&gt;
+                    &lt;div class=&quot;t-center main-arrow&quot;&gt;
+                        &lt;i class=&quot;fa fa-arrow-circle-down&quot;&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;script
+                        async
+                        type=&quot;text/javascript&quot;
+                        src=&quot;//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin&quot;
+                        id=&quot;_carbonads_js&quot;
+                    &gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/main&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container&quot;&gt;404&lt;/div&gt;
+        &lt;footer&gt;
+            &lt;div class=&quot;wrap&quot;&gt;
+                &lt;hr class=&quot;dark&quot; /&gt;
+                &lt;p class=&quot;t-center&quot;&gt;
+                    Made for developers and designers by
+                    &lt;a href=&quot;https://benhowdle.im&quot;&gt;Ben Howdle&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/footer&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/js/app.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+        &lt;script
+            async
+            src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-174008107-1&quot;
+        &gt;&lt;/script&gt;
+        &lt;script&gt;
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag(&#39;js&#39;, new Date())
+
+            gtag(&#39;config&#39;, &#39;UA-174008107-1&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function (i, s, o, g, r, a, m) {
+                i[&#39;GoogleAnalyticsObject&#39;] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                &#39;script&#39;,
+                &#39;//www.google-analytics.com/analytics.js&#39;,
+                &#39;ga&#39;
+            )
+
+            ga(&#39;create&#39;, &#39;UA-55888877-1&#39;, &#39;auto&#39;)
+            ga(&#39;send&#39;, &#39;pageview&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function () {
+                if (typeof _bsa !== &#39;undefined&#39; &amp;&amp; _bsa) {
+                    _bsa.init(
+                        &#39;custom&#39;,
+                        &#39;CEBIP53J&#39;,
+                        &#39;placement:reqresin-sponsor&#39;,
+                        {
+                            target: &#39;#impeccable-js&#39;,
+                            template: `
+        &lt;a href=&quot;##link##&quot; rel=&quot;sponsored noopener&quot; target=&quot;_blank&quot; title=&quot;##company## — ##tagline##&quot;&gt;
+        &lt;img src=&quot;##logo##&quot; style=&quot;background-color: ##backgroundColor##&quot;&gt;
+        &lt;div class=&quot;sponsor-description&quot;&gt;##description##&lt;/div&gt;
+        &lt;div class=&quot;sponsor-cta&quot; style=&quot;background-color: ##backgroundColor##; color: ##textColor##&quot;&gt;##callToAction##&lt;/div&gt;
+        &lt;/a&gt;
+        `,
+                        }
+                    )
+                }
+            })()
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref failed">58</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.58">11:40:36.504 classpath:testrunner/PUT.feature:58
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 644, url: https://reqres.in/api/register, response: 
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;!-- Google Tag Manager --&gt;
+        &lt;script&gt;
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    &#39;gtm.start&#39;: new Date().getTime(),
+                    event: &#39;gtm.js&#39;,
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != &#39;dataLayer&#39; ? &#39;&amp;l=&#39; + l : &#39;&#39;
+                j.async = true
+                j.src = &#39;https://www.googletagmanager.com/gtm.js?id=&#39; + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, &#39;script&#39;, &#39;dataLayer&#39;, &#39;GTM-KB622KF&#39;)
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+        &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta
+            name=&quot;viewport&quot;
+            content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0&quot;
+        /&gt;
+        &lt;meta
+            name=&quot;description&quot;
+            content=&quot;A hosted REST-API ready to respond to your AJAX requests&quot;
+        /&gt;
+        &lt;title&gt;
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        &lt;/title&gt;
+        &lt;link
+            href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;
+            rel=&quot;stylesheet&quot;
+        /&gt;
+
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/app.css&quot; /&gt;
+        &lt;script
+            type=&quot;text/javascript&quot;
+            src=&quot;//m.servedby-buysellads.com/monetization.custom.js&quot;
+        &gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;header-content&quot;&gt;
+            &lt;header class=&quot;main-header&quot;&gt;
+                &lt;section class=&quot;wrap&quot;&gt;
+                    &lt;h1 class=&quot;logo&quot;&gt;
+                        &lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/img/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+                    &lt;/h1&gt;
+                &lt;/section&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;the-sell&quot;&gt;
+                &lt;div class=&quot;wrap&quot;&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        Test your front-end against a real API
+                    &lt;/h2&gt;
+                    &lt;section class=&quot;key-sells&quot;&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Fake data&lt;/h3&gt;
+                                &lt;p&gt;
+                                    No more tedious sample data creation, we&#39;ve
+                                    got it covered.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-cloud-download&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Real responses&lt;/h3&gt;
+                                &lt;p&gt;
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp;amp; DELETE supported.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-code&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Always-on&lt;/h3&gt;
+                                &lt;p&gt;
+                                    24/7 &lt;strong&gt;&lt;em&gt;free&lt;/em&gt;&lt;/strong&gt; access
+                                    in your development phases. Go nuts.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-toggle-on&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    &lt;/h2&gt;
+                    &lt;div class=&quot;t-center main-arrow&quot;&gt;
+                        &lt;i class=&quot;fa fa-arrow-circle-down&quot;&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;script
+                        async
+                        type=&quot;text/javascript&quot;
+                        src=&quot;//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin&quot;
+                        id=&quot;_carbonads_js&quot;
+                    &gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/main&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container&quot;&gt;404&lt;/div&gt;
+        &lt;footer&gt;
+            &lt;div class=&quot;wrap&quot;&gt;
+                &lt;hr class=&quot;dark&quot; /&gt;
+                &lt;p class=&quot;t-center&quot;&gt;
+                    Made for developers and designers by
+                    &lt;a href=&quot;https://benhowdle.im&quot;&gt;Ben Howdle&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/footer&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/js/app.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+        &lt;script
+            async
+            src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-174008107-1&quot;
+        &gt;&lt;/script&gt;
+        &lt;script&gt;
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag(&#39;js&#39;, new Date())
+
+            gtag(&#39;config&#39;, &#39;UA-174008107-1&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function (i, s, o, g, r, a, m) {
+                i[&#39;GoogleAnalyticsObject&#39;] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                &#39;script&#39;,
+                &#39;//www.google-analytics.com/analytics.js&#39;,
+                &#39;ga&#39;
+            )
+
+            ga(&#39;create&#39;, &#39;UA-55888877-1&#39;, &#39;auto&#39;)
+            ga(&#39;send&#39;, &#39;pageview&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function () {
+                if (typeof _bsa !== &#39;undefined&#39; &amp;&amp; _bsa) {
+                    _bsa.init(
+                        &#39;custom&#39;,
+                        &#39;CEBIP53J&#39;,
+                        &#39;placement:reqresin-sponsor&#39;,
+                        {
+                            target: &#39;#impeccable-js&#39;,
+                            template: `
+        &lt;a href=&quot;##link##&quot; rel=&quot;sponsored noopener&quot; target=&quot;_blank&quot; title=&quot;##company## — ##tagline##&quot;&gt;
+        &lt;img src=&quot;##logo##&quot; style=&quot;background-color: ##backgroundColor##&quot;&gt;
+        &lt;div class=&quot;sponsor-description&quot;&gt;##description##&lt;/div&gt;
+        &lt;div class=&quot;sponsor-cta&quot; style=&quot;background-color: ##backgroundColor##; color: ##textColor##&quot;&gt;##callToAction##&lt;/div&gt;
+        &lt;/a&gt;
+        `,
+                        }
+                    )
+                }
+            })()
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+classpath:testrunner/PUT.feature:58
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref skipped">59</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == expectedOutput</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref skipped">60</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref skipped">61</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref skipped">62</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseTime</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref skipped">63</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref skipped">64</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseCookies</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:67]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:67]</span>
+                <span class="scenario-name">REQUEST FROM FILE</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>687</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://reqres.in&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def requestBody = read(&#39;putrequest.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">684</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.73">11:40:36.517 request:
+1 &gt; PUT https://reqres.in/api/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 50
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;password&quot;:&quot;pistol&quot;}
+
+11:40:37.198 response time in milliseconds: 680
+1 &lt; 404
+1 &lt; Date: Sat, 07 Jan 2023 06:10:37 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=GZPu6mzHT%2B21RpJqzUwraEi%2BDL%2FBDWsdVfvU1OCTDNpCbiWO3Z4MFl65kvKKZTh4lhCy%2BGwN%2Bw9A3K0CDgw5vp%2BhrLO2llaAy3WqwUe7M50eOG11%2FIouIGdsZw%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 785a88036f441bc7-BOM
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;!-- Google Tag Manager --&gt;
+        &lt;script&gt;
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    &#39;gtm.start&#39;: new Date().getTime(),
+                    event: &#39;gtm.js&#39;,
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != &#39;dataLayer&#39; ? &#39;&amp;l=&#39; + l : &#39;&#39;
+                j.async = true
+                j.src = &#39;https://www.googletagmanager.com/gtm.js?id=&#39; + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, &#39;script&#39;, &#39;dataLayer&#39;, &#39;GTM-KB622KF&#39;)
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+        &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta
+            name=&quot;viewport&quot;
+            content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0&quot;
+        /&gt;
+        &lt;meta
+            name=&quot;description&quot;
+            content=&quot;A hosted REST-API ready to respond to your AJAX requests&quot;
+        /&gt;
+        &lt;title&gt;
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        &lt;/title&gt;
+        &lt;link
+            href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;
+            rel=&quot;stylesheet&quot;
+        /&gt;
+
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/app.css&quot; /&gt;
+        &lt;script
+            type=&quot;text/javascript&quot;
+            src=&quot;//m.servedby-buysellads.com/monetization.custom.js&quot;
+        &gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;header-content&quot;&gt;
+            &lt;header class=&quot;main-header&quot;&gt;
+                &lt;section class=&quot;wrap&quot;&gt;
+                    &lt;h1 class=&quot;logo&quot;&gt;
+                        &lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/img/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+                    &lt;/h1&gt;
+                &lt;/section&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;the-sell&quot;&gt;
+                &lt;div class=&quot;wrap&quot;&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        Test your front-end against a real API
+                    &lt;/h2&gt;
+                    &lt;section class=&quot;key-sells&quot;&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Fake data&lt;/h3&gt;
+                                &lt;p&gt;
+                                    No more tedious sample data creation, we&#39;ve
+                                    got it covered.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-cloud-download&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Real responses&lt;/h3&gt;
+                                &lt;p&gt;
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp;amp; DELETE supported.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-code&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Always-on&lt;/h3&gt;
+                                &lt;p&gt;
+                                    24/7 &lt;strong&gt;&lt;em&gt;free&lt;/em&gt;&lt;/strong&gt; access
+                                    in your development phases. Go nuts.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-toggle-on&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    &lt;/h2&gt;
+                    &lt;div class=&quot;t-center main-arrow&quot;&gt;
+                        &lt;i class=&quot;fa fa-arrow-circle-down&quot;&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;script
+                        async
+                        type=&quot;text/javascript&quot;
+                        src=&quot;//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin&quot;
+                        id=&quot;_carbonads_js&quot;
+                    &gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/main&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container&quot;&gt;404&lt;/div&gt;
+        &lt;footer&gt;
+            &lt;div class=&quot;wrap&quot;&gt;
+                &lt;hr class=&quot;dark&quot; /&gt;
+                &lt;p class=&quot;t-center&quot;&gt;
+                    Made for developers and designers by
+                    &lt;a href=&quot;https://benhowdle.im&quot;&gt;Ben Howdle&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/footer&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/js/app.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+        &lt;script
+            async
+            src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-174008107-1&quot;
+        &gt;&lt;/script&gt;
+        &lt;script&gt;
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag(&#39;js&#39;, new Date())
+
+            gtag(&#39;config&#39;, &#39;UA-174008107-1&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function (i, s, o, g, r, a, m) {
+                i[&#39;GoogleAnalyticsObject&#39;] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                &#39;script&#39;,
+                &#39;//www.google-analytics.com/analytics.js&#39;,
+                &#39;ga&#39;
+            )
+
+            ga(&#39;create&#39;, &#39;UA-55888877-1&#39;, &#39;auto&#39;)
+            ga(&#39;send&#39;, &#39;pageview&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function () {
+                if (typeof _bsa !== &#39;undefined&#39; &amp;&amp; _bsa) {
+                    _bsa.init(
+                        &#39;custom&#39;,
+                        &#39;CEBIP53J&#39;,
+                        &#39;placement:reqresin-sponsor&#39;,
+                        {
+                            target: &#39;#impeccable-js&#39;,
+                            template: `
+        &lt;a href=&quot;##link##&quot; rel=&quot;sponsored noopener&quot; target=&quot;_blank&quot; title=&quot;##company## — ##tagline##&quot;&gt;
+        &lt;img src=&quot;##logo##&quot; style=&quot;background-color: ##backgroundColor##&quot;&gt;
+        &lt;div class=&quot;sponsor-description&quot;&gt;##description##&lt;/div&gt;
+        &lt;div class=&quot;sponsor-cta&quot; style=&quot;background-color: ##backgroundColor##; color: ##textColor##&quot;&gt;##callToAction##&lt;/div&gt;
+        &lt;/a&gt;
+        `,
+                        }
+                    )
+                }
+            })()
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref failed">74</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.74">11:40:37.199 classpath:testrunner/PUT.feature:74
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 680, url: https://reqres.in/api/register, response: 
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;!-- Google Tag Manager --&gt;
+        &lt;script&gt;
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    &#39;gtm.start&#39;: new Date().getTime(),
+                    event: &#39;gtm.js&#39;,
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != &#39;dataLayer&#39; ? &#39;&amp;l=&#39; + l : &#39;&#39;
+                j.async = true
+                j.src = &#39;https://www.googletagmanager.com/gtm.js?id=&#39; + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, &#39;script&#39;, &#39;dataLayer&#39;, &#39;GTM-KB622KF&#39;)
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+        &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta
+            name=&quot;viewport&quot;
+            content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0&quot;
+        /&gt;
+        &lt;meta
+            name=&quot;description&quot;
+            content=&quot;A hosted REST-API ready to respond to your AJAX requests&quot;
+        /&gt;
+        &lt;title&gt;
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        &lt;/title&gt;
+        &lt;link
+            href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;
+            rel=&quot;stylesheet&quot;
+        /&gt;
+
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/app.css&quot; /&gt;
+        &lt;script
+            type=&quot;text/javascript&quot;
+            src=&quot;//m.servedby-buysellads.com/monetization.custom.js&quot;
+        &gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;header-content&quot;&gt;
+            &lt;header class=&quot;main-header&quot;&gt;
+                &lt;section class=&quot;wrap&quot;&gt;
+                    &lt;h1 class=&quot;logo&quot;&gt;
+                        &lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/img/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+                    &lt;/h1&gt;
+                &lt;/section&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;the-sell&quot;&gt;
+                &lt;div class=&quot;wrap&quot;&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        Test your front-end against a real API
+                    &lt;/h2&gt;
+                    &lt;section class=&quot;key-sells&quot;&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Fake data&lt;/h3&gt;
+                                &lt;p&gt;
+                                    No more tedious sample data creation, we&#39;ve
+                                    got it covered.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-cloud-download&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Real responses&lt;/h3&gt;
+                                &lt;p&gt;
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp;amp; DELETE supported.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-code&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Always-on&lt;/h3&gt;
+                                &lt;p&gt;
+                                    24/7 &lt;strong&gt;&lt;em&gt;free&lt;/em&gt;&lt;/strong&gt; access
+                                    in your development phases. Go nuts.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-toggle-on&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    &lt;/h2&gt;
+                    &lt;div class=&quot;t-center main-arrow&quot;&gt;
+                        &lt;i class=&quot;fa fa-arrow-circle-down&quot;&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;script
+                        async
+                        type=&quot;text/javascript&quot;
+                        src=&quot;//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin&quot;
+                        id=&quot;_carbonads_js&quot;
+                    &gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/main&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container&quot;&gt;404&lt;/div&gt;
+        &lt;footer&gt;
+            &lt;div class=&quot;wrap&quot;&gt;
+                &lt;hr class=&quot;dark&quot; /&gt;
+                &lt;p class=&quot;t-center&quot;&gt;
+                    Made for developers and designers by
+                    &lt;a href=&quot;https://benhowdle.im&quot;&gt;Ben Howdle&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/footer&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/js/app.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+        &lt;script
+            async
+            src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-174008107-1&quot;
+        &gt;&lt;/script&gt;
+        &lt;script&gt;
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag(&#39;js&#39;, new Date())
+
+            gtag(&#39;config&#39;, &#39;UA-174008107-1&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function (i, s, o, g, r, a, m) {
+                i[&#39;GoogleAnalyticsObject&#39;] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                &#39;script&#39;,
+                &#39;//www.google-analytics.com/analytics.js&#39;,
+                &#39;ga&#39;
+            )
+
+            ga(&#39;create&#39;, &#39;UA-55888877-1&#39;, &#39;auto&#39;)
+            ga(&#39;send&#39;, &#39;pageview&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function () {
+                if (typeof _bsa !== &#39;undefined&#39; &amp;&amp; _bsa) {
+                    _bsa.init(
+                        &#39;custom&#39;,
+                        &#39;CEBIP53J&#39;,
+                        &#39;placement:reqresin-sponsor&#39;,
+                        {
+                            target: &#39;#impeccable-js&#39;,
+                            template: `
+        &lt;a href=&quot;##link##&quot; rel=&quot;sponsored noopener&quot; target=&quot;_blank&quot; title=&quot;##company## — ##tagline##&quot;&gt;
+        &lt;img src=&quot;##logo##&quot; style=&quot;background-color: ##backgroundColor##&quot;&gt;
+        &lt;div class=&quot;sponsor-description&quot;&gt;##description##&lt;/div&gt;
+        &lt;div class=&quot;sponsor-cta&quot; style=&quot;background-color: ##backgroundColor##; color: ##textColor##&quot;&gt;##callToAction##&lt;/div&gt;
+        &lt;/a&gt;
+        `,
+                        }
+                    )
+                }
+            })()
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+classpath:testrunner/PUT.feature:74
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref skipped">75</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref skipped">76</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref skipped">77</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseTime</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref skipped">78</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref skipped">79</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseCookies</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:83]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:83]</span>
+                <span class="scenario-name">PUT SPECIFIC DATA</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>693</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://reqres.in&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def requestBody = read(&#39;putrequest.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.88">
+      <div class="step-ref passed">88</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.89">
+      <div class="step-ref passed">89</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>set requestBody.password = &#39;engineer&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.90">
+      <div class="step-ref passed">90</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">691</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.90">11:40:37.212 request:
+1 &gt; PUT https://reqres.in/api/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 52
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;password&quot;:&quot;engineer&quot;}
+
+11:40:37.899 response time in milliseconds: 687
+1 &lt; 404
+1 &lt; Date: Sat, 07 Jan 2023 06:10:37 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=fMYosqsX40qyAALuvA7WjmsWpFnG0bQ9talsUyZI663YS7nNdajgZ0ywh5CZm1%2BADd7YL7WZivGjtf3NSLY07o703DpIKMJTnbH%2F17Zij8UHQuPHEYIrldgBtA%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 785a8807eca384e3-BOM
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;!-- Google Tag Manager --&gt;
+        &lt;script&gt;
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    &#39;gtm.start&#39;: new Date().getTime(),
+                    event: &#39;gtm.js&#39;,
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != &#39;dataLayer&#39; ? &#39;&amp;l=&#39; + l : &#39;&#39;
+                j.async = true
+                j.src = &#39;https://www.googletagmanager.com/gtm.js?id=&#39; + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, &#39;script&#39;, &#39;dataLayer&#39;, &#39;GTM-KB622KF&#39;)
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+        &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta
+            name=&quot;viewport&quot;
+            content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0&quot;
+        /&gt;
+        &lt;meta
+            name=&quot;description&quot;
+            content=&quot;A hosted REST-API ready to respond to your AJAX requests&quot;
+        /&gt;
+        &lt;title&gt;
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        &lt;/title&gt;
+        &lt;link
+            href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;
+            rel=&quot;stylesheet&quot;
+        /&gt;
+
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/app.css&quot; /&gt;
+        &lt;script
+            type=&quot;text/javascript&quot;
+            src=&quot;//m.servedby-buysellads.com/monetization.custom.js&quot;
+        &gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;header-content&quot;&gt;
+            &lt;header class=&quot;main-header&quot;&gt;
+                &lt;section class=&quot;wrap&quot;&gt;
+                    &lt;h1 class=&quot;logo&quot;&gt;
+                        &lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/img/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+                    &lt;/h1&gt;
+                &lt;/section&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;the-sell&quot;&gt;
+                &lt;div class=&quot;wrap&quot;&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        Test your front-end against a real API
+                    &lt;/h2&gt;
+                    &lt;section class=&quot;key-sells&quot;&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Fake data&lt;/h3&gt;
+                                &lt;p&gt;
+                                    No more tedious sample data creation, we&#39;ve
+                                    got it covered.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-cloud-download&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Real responses&lt;/h3&gt;
+                                &lt;p&gt;
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp;amp; DELETE supported.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-code&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Always-on&lt;/h3&gt;
+                                &lt;p&gt;
+                                    24/7 &lt;strong&gt;&lt;em&gt;free&lt;/em&gt;&lt;/strong&gt; access
+                                    in your development phases. Go nuts.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-toggle-on&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    &lt;/h2&gt;
+                    &lt;div class=&quot;t-center main-arrow&quot;&gt;
+                        &lt;i class=&quot;fa fa-arrow-circle-down&quot;&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;script
+                        async
+                        type=&quot;text/javascript&quot;
+                        src=&quot;//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin&quot;
+                        id=&quot;_carbonads_js&quot;
+                    &gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/main&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container&quot;&gt;404&lt;/div&gt;
+        &lt;footer&gt;
+            &lt;div class=&quot;wrap&quot;&gt;
+                &lt;hr class=&quot;dark&quot; /&gt;
+                &lt;p class=&quot;t-center&quot;&gt;
+                    Made for developers and designers by
+                    &lt;a href=&quot;https://benhowdle.im&quot;&gt;Ben Howdle&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/footer&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/js/app.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+        &lt;script
+            async
+            src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-174008107-1&quot;
+        &gt;&lt;/script&gt;
+        &lt;script&gt;
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag(&#39;js&#39;, new Date())
+
+            gtag(&#39;config&#39;, &#39;UA-174008107-1&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function (i, s, o, g, r, a, m) {
+                i[&#39;GoogleAnalyticsObject&#39;] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                &#39;script&#39;,
+                &#39;//www.google-analytics.com/analytics.js&#39;,
+                &#39;ga&#39;
+            )
+
+            ga(&#39;create&#39;, &#39;UA-55888877-1&#39;, &#39;auto&#39;)
+            ga(&#39;send&#39;, &#39;pageview&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function () {
+                if (typeof _bsa !== &#39;undefined&#39; &amp;&amp; _bsa) {
+                    _bsa.init(
+                        &#39;custom&#39;,
+                        &#39;CEBIP53J&#39;,
+                        &#39;placement:reqresin-sponsor&#39;,
+                        {
+                            target: &#39;#impeccable-js&#39;,
+                            template: `
+        &lt;a href=&quot;##link##&quot; rel=&quot;sponsored noopener&quot; target=&quot;_blank&quot; title=&quot;##company## — ##tagline##&quot;&gt;
+        &lt;img src=&quot;##logo##&quot; style=&quot;background-color: ##backgroundColor##&quot;&gt;
+        &lt;div class=&quot;sponsor-description&quot;&gt;##description##&lt;/div&gt;
+        &lt;div class=&quot;sponsor-cta&quot; style=&quot;background-color: ##backgroundColor##; color: ##textColor##&quot;&gt;##callToAction##&lt;/div&gt;
+        &lt;/a&gt;
+        `,
+                        }
+                    )
+                }
+            })()
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref failed">91</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.91">11:40:37.901 classpath:testrunner/PUT.feature:91
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 687, url: https://reqres.in/api/register, response: 
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;!-- Google Tag Manager --&gt;
+        &lt;script&gt;
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    &#39;gtm.start&#39;: new Date().getTime(),
+                    event: &#39;gtm.js&#39;,
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != &#39;dataLayer&#39; ? &#39;&amp;l=&#39; + l : &#39;&#39;
+                j.async = true
+                j.src = &#39;https://www.googletagmanager.com/gtm.js?id=&#39; + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, &#39;script&#39;, &#39;dataLayer&#39;, &#39;GTM-KB622KF&#39;)
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+        &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta
+            name=&quot;viewport&quot;
+            content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0&quot;
+        /&gt;
+        &lt;meta
+            name=&quot;description&quot;
+            content=&quot;A hosted REST-API ready to respond to your AJAX requests&quot;
+        /&gt;
+        &lt;title&gt;
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        &lt;/title&gt;
+        &lt;link
+            href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;
+            rel=&quot;stylesheet&quot;
+        /&gt;
+
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/app.css&quot; /&gt;
+        &lt;script
+            type=&quot;text/javascript&quot;
+            src=&quot;//m.servedby-buysellads.com/monetization.custom.js&quot;
+        &gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;header-content&quot;&gt;
+            &lt;header class=&quot;main-header&quot;&gt;
+                &lt;section class=&quot;wrap&quot;&gt;
+                    &lt;h1 class=&quot;logo&quot;&gt;
+                        &lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/img/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+                    &lt;/h1&gt;
+                &lt;/section&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;the-sell&quot;&gt;
+                &lt;div class=&quot;wrap&quot;&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        Test your front-end against a real API
+                    &lt;/h2&gt;
+                    &lt;section class=&quot;key-sells&quot;&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Fake data&lt;/h3&gt;
+                                &lt;p&gt;
+                                    No more tedious sample data creation, we&#39;ve
+                                    got it covered.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-cloud-download&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Real responses&lt;/h3&gt;
+                                &lt;p&gt;
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp;amp; DELETE supported.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-code&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sell&quot;&gt;
+                            &lt;div class=&quot;v-center&quot;&gt;
+                                &lt;h3&gt;Always-on&lt;/h3&gt;
+                                &lt;p&gt;
+                                    24/7 &lt;strong&gt;&lt;em&gt;free&lt;/em&gt;&lt;/strong&gt; access
+                                    in your development phases. Go nuts.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;i class=&quot;fa fa-toggle-on&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    &lt;h2 class=&quot;tagline&quot;&gt;
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    &lt;/h2&gt;
+                    &lt;div class=&quot;t-center main-arrow&quot;&gt;
+                        &lt;i class=&quot;fa fa-arrow-circle-down&quot;&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;script
+                        async
+                        type=&quot;text/javascript&quot;
+                        src=&quot;//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin&quot;
+                        id=&quot;_carbonads_js&quot;
+                    &gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/main&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container&quot;&gt;404&lt;/div&gt;
+        &lt;footer&gt;
+            &lt;div class=&quot;wrap&quot;&gt;
+                &lt;hr class=&quot;dark&quot; /&gt;
+                &lt;p class=&quot;t-center&quot;&gt;
+                    Made for developers and designers by
+                    &lt;a href=&quot;https://benhowdle.im&quot;&gt;Ben Howdle&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/footer&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/js/app.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+        &lt;script
+            async
+            src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-174008107-1&quot;
+        &gt;&lt;/script&gt;
+        &lt;script&gt;
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag(&#39;js&#39;, new Date())
+
+            gtag(&#39;config&#39;, &#39;UA-174008107-1&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function (i, s, o, g, r, a, m) {
+                i[&#39;GoogleAnalyticsObject&#39;] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                &#39;script&#39;,
+                &#39;//www.google-analytics.com/analytics.js&#39;,
+                &#39;ga&#39;
+            )
+
+            ga(&#39;create&#39;, &#39;UA-55888877-1&#39;, &#39;auto&#39;)
+            ga(&#39;send&#39;, &#39;pageview&#39;)
+        &lt;/script&gt;
+        &lt;script&gt;
+            ;(function () {
+                if (typeof _bsa !== &#39;undefined&#39; &amp;&amp; _bsa) {
+                    _bsa.init(
+                        &#39;custom&#39;,
+                        &#39;CEBIP53J&#39;,
+                        &#39;placement:reqresin-sponsor&#39;,
+                        {
+                            target: &#39;#impeccable-js&#39;,
+                            template: `
+        &lt;a href=&quot;##link##&quot; rel=&quot;sponsored noopener&quot; target=&quot;_blank&quot; title=&quot;##company## — ##tagline##&quot;&gt;
+        &lt;img src=&quot;##logo##&quot; style=&quot;background-color: ##backgroundColor##&quot;&gt;
+        &lt;div class=&quot;sponsor-description&quot;&gt;##description##&lt;/div&gt;
+        &lt;div class=&quot;sponsor-cta&quot; style=&quot;background-color: ##backgroundColor##; color: ##textColor##&quot;&gt;##callToAction##&lt;/div&gt;
+        &lt;/a&gt;
+        `,
+                        }
+                    )
+                }
+            })()
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+classpath:testrunner/PUT.feature:91
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref skipped">92</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref skipped">93</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref skipped">94</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseTime</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref skipped">95</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref skipped">96</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print responseCookies</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

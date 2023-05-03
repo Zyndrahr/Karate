@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"testrunner\/PUT[1:4]","start":1673071833648,"end":1673071834323,"title":"testrunner\/PUT[1:4] 11:40:33.648-11:40:34.323 PUT API","className":"failed"},{"id":2,"group":1,"content":"testrunner\/PUT[2:18]","start":1673071834332,"end":1673071835038,"title":"testrunner\/PUT[2:18] 11:40:34.332-11:40:35.038 PUT_WITH_BACKGROUND","className":"failed"},{"id":3,"group":1,"content":"testrunner\/PUT[3:34]","start":1673071835053,"end":1673071835845,"title":"testrunner\/PUT[3:34] 11:40:35.053-11:40:35.845 RESPONSE ASSERTION","className":"failed"},{"id":4,"group":1,"content":"testrunner\/PUT[4:50]","start":1673071835852,"end":1673071836503,"title":"testrunner\/PUT[4:50] 11:40:35.852-11:40:36.503 RESPONSE FROM FILE","className":"failed"},{"id":5,"group":1,"content":"testrunner\/PUT[5:67]","start":1673071836511,"end":1673071837198,"title":"testrunner\/PUT[5:67] 11:40:36.511-11:40:37.198 REQUEST FROM FILE","className":"failed"},{"id":6,"group":1,"content":"testrunner\/PUT[6:83]","start":1673071837206,"end":1673071837900,"title":"testrunner\/PUT[6:83] 11:40:37.206-11:40:37.900 PUT SPECIFIC DATA","className":"failed"},{"id":7,"group":1,"content":"testrunner\/GET[1:3]","start":1673071825295,"end":1673071825486,"title":"testrunner\/GET[1:3] 11:40:25.295-11:40:25.486 Get API"},{"id":8,"group":1,"content":"testrunner\/GET[2:17]","start":1673071825501,"end":1673071825686,"title":"testrunner\/GET[2:17] 11:40:25.501-11:40:25.686 GET_WITH_BACKGROUND"},{"id":9,"group":1,"content":"testrunner\/GET[3:31]","start":1673071825698,"end":1673071826383,"title":"testrunner\/GET[3:31] 11:40:25.698-11:40:26.383 GET_WITH_PATH_PARAMS","className":"failed"},{"id":10,"group":1,"content":"testrunner\/DELETE[1:3]","start":1673071820710,"end":1673071822506,"title":"testrunner\/DELETE[1:3] 11:40:20.710-11:40:22.506 DELETE API"},{"id":11,"group":1,"content":"testrunner\/DELETE[2:17]","start":1673071822527,"end":1673071823224,"title":"testrunner\/DELETE[2:17] 11:40:22.527-11:40:23.224 DELETE_WITH_BACKGROUND"},{"id":12,"group":1,"content":"testrunner\/DELETE[3:31]","start":1673071823237,"end":1673071823936,"title":"testrunner\/DELETE[3:31] 11:40:23.237-11:40:23.936 DELETE_WITH_PATH_PARAMS","className":"failed"},{"id":13,"group":1,"content":"testrunner\/POST[1:4]","start":1673071826770,"end":1673071827510,"title":"testrunner\/POST[1:4] 11:40:26.770-11:40:27.510 POST API"},{"id":14,"group":1,"content":"testrunner\/POST[2:18]","start":1673071827518,"end":1673071828205,"title":"testrunner\/POST[2:18] 11:40:27.518-11:40:28.205 POST_WITH_BACKGROUND"},{"id":15,"group":1,"content":"testrunner\/POST[3:34]","start":1673071828216,"end":1673071831270,"title":"testrunner\/POST[3:34] 11:40:28.216-11:40:31.270 RESPONSE ASSERTION"},{"id":16,"group":1,"content":"testrunner\/POST[4:50]","start":1673071831278,"end":1673071831949,"title":"testrunner\/POST[4:50] 11:40:31.278-11:40:31.949 RESPONSE FROM FILE"},{"id":17,"group":1,"content":"testrunner\/POST[5:67]","start":1673071831956,"end":1673071832596,"title":"testrunner\/POST[5:67] 11:40:31.956-11:40:32.596 REQUEST FROM FILE"},{"id":18,"group":1,"content":"testrunner\/POST[6:83]","start":1673071832603,"end":1673071833261,"title":"testrunner\/POST[6:83] 11:40:32.603-11:40:33.261 POST SPECIFIC DATA"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
